@@ -1,0 +1,48 @@
+body {
+    padding: 25px;
+    background-color: #d0d4d2;
+}
+
+.tab-pane {
+    padding: 20px;
+
+}
+#info {
+    background-color: #e9e5d9;
+}
+
+#review {
+    background-color: #ebf3eb;
+}
+#subTotal{
+    font-size: larger;
+}
+
+input[type="radio"]{
+   margin: 0 10px 0 10px;
+}
+
+.bootstrap-select {
+    max-width: 200px;
+}
+
+.bootstrap-select .btn {
+    background-color: #141414;
+    border-style: solid;
+    border-left-width: 3px;
+    border-left-color: #00DDDD;
+    border-top: none;
+    border-bottom: none;
+    border-right: none;
+    color: darkred;
+    font-weight: 200;
+    padding: 12px 12px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+.bootstrap-select .dropdown-menu {
+    margin: 15px 0 0;
+}

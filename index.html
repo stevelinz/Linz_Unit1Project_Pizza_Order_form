@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tabs</title>
+    <!-- Bootstrap styles first -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Our styles -->
+    <link href="tabs.css" rel="stylesheet" type="text/css"/>
+</head>
+
+<body id="page">
+<div class="container">
+    <nav>
+        <ul id="tabs" class="nav nav-tabs">
+            <li class="nav-item">
+                <a class="nav-link active" href="#order">Order</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#info">Info</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#review">Review</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="tab-content">
+        <div id="order" class="tab-pane active">
+            <h2>Step 1: Choose pizza details</h2>
+            <p>Design your master pizza</p>
+            <p>
+                <img src="x.jpg" alt="pizza" id="pizza">
+                <br>
+
+            <div>
+                <ul class="list-group">
+
+                    <li class="list-group-item" id="pizzaSize"><label>Size Options: </label>
+
+                        <input type="radio" name="size" id="small" value="Small ($7.00)">
+                        <label for="small">small $7</label>
+
+                        <input type="radio" name="size" id="medium" value="Medium ($9.00)">
+                        <label for="medium">medium $9</label>
+
+                        <input type="radio" name="size" id="large" value="Large ($12.00)">
+                        <label for="large">large $12</label>
+
+                    </li>
+
+
+                    <li class="list-group-item" id="pizzaCrust"><label>Crust Options: </label>
+
+                        <input type="radio" name="crust" id="thin" value="Thin">
+                        <label for="thin">Thin</label>
+
+                        <input type="radio" name="crust" id="pan" value="Pan">
+                        <label for="pan">Pan</label>
+
+                        <input type="radio" name="crust" id="gluten" value="NonGluten">
+                        <label for="gluten">Gluten Free</label>
+
+                    </li>
+
+                    <li class="list-group-item" id="meats"><label>Meat Options: </label>
+
+                    <input type="checkbox" id="pepperoni" name="meat" value="1.50" />&nbsp; Pepperoni
+                    <input type="checkbox" id="sausage" name="meat" value="1.50" />&nbsp; Sausage
+                    <input type="checkbox" id="bacon" name="meat" value="1.50" />&nbsp; Bacon
+                    </li>
+
+                   <! ------------------------------------------------------------------------>
+
+
+                    <li class="list-group-item" id="veggies"><label>Veggie Options: </label>
+
+                        <input type="checkbox" id="tomatoes" name="veg" value="tomatoes">
+                        <label> tomatoes</label>
+                        <input type="checkbox" id="olives" name="veg" value="olives">
+                        <label> olives</label>
+                        <input type="checkbox" id="mushrooms" name="veg" value="mushrooms">
+                        <label> mushrooms</label>
+
+                    </li>
+                    <!-------------------------------------------------------------------------->
+
+                </ul>
+            </div>
+
+        </div>
+
+        <div id="info" class="tab-pane">
+            <h2>Information about your order </h2>
+            <p>We will provide the info on that pizza(s)</p>
+
+            <label for="name">Full name</label>
+            <input id="name" type="text"><br><br>
+            <label for="address">Street address</label>
+            <input id="address" type="text"><br><br>
+            <label for="cell">Cell phone</label>
+            <input id="cell" type="text">
+
+        </div>
+
+
+        <div id="review" class="tab-pane">
+
+
+            <table class="table table-striped">
+                <thead>
+                <tr>
+                    <th scope="col"><h2>Review then we Deliver</h2></th>
+                    <th scope="col"><p>We are ready to review then it is out for delivery</p></th>
+
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td><label for="name">Full name</label></td>
+                    <td>
+                        <div id="nameReview"></div>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td><label for="address">Street address</label></td>
+                    <td>
+                        <div id="addressReview"></div>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td><label for="cell">Cell phone</label></td>
+                    <td>
+                        <div id="cellReview"></div>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td><label for="pizzaSize">Size:</label></td>
+                    <td>
+                        <div id="sizeReview"></div>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td><label for="pizzaCrust">Crust</label></td>
+                    <td>
+                        <div id="crustReview"></div>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td><label for="meats">Meats ($1.50 each)</label></td>
+                    <td>
+                        <div id="meatsReview"></div>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td><label for="veggies">Veggies ($1.00 each)</label></td>
+                    <td>
+                        <div id="veggiesReview"></div>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+
+
+            <h2>Review then we Deliver</h2>
+            <p>We are ready to review then it is out for delivery</p>
+            <img src="x.jpg" alt="pizza">
+
+            <div id="subTotal">
+                <button>Add it up</button>
+            </div>
+
+
+        </div>
+
+
+    </div>
+</div>
+
+
+<!-- jQuery first -->
+<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<!-- Popper and Bootstrap second -->
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<!-- Our code last -->
+<script src="tabs.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,66 @@
+
+Unit 1 Project
+
+    Due Nov 15 by 11:59pm Points 30 Submitting a website url
+
+Pizza Order Form
+
+Create a one-page site that contains a pizza order form.
+The ordering process should be broken down into three steps.
+
+    Step 1: Choose pizza details
+    Size (small $7, medium $9, large $12)
+    Crust (thin, pan, gluten free)
+    Meats ($1.50 each)
+    Veggies ($1.00 each)
+
+    Step 2: Enter delivery information
+    Name
+    Address
+    Phone
+
+    Step 3: Order confirmation
+    Display all of the pizza details and customer information from steps 1 and 2
+    Display the subtotal, calculated tax (use a rate of 5.1 %), delivery fee ($2),
+    and the total amount due
+
+    Format all amounts to two decimal places.
+
+
+Requirements
+
+Design and structure
+
+    Use external CSS and JS files.
+    Make sure you have styled text and colors, etc.
+    Make the page look like it belongs to a pizza delivery company.
+
+Sequenced order form
+
+    Your form must be broken down into three steps, where only one step is shown at a time.
+    You can use the three tabs that were demonstrated in class.
+    Another options is to show and hide <div> elements,
+    providing the user with "Next" and "Previous" buttons to step through the order form.
+
+Forms
+
+    Use the appropriate input field types for the type of data you are collecting.
+    Fields should be accessible (Hint: use <label> elements).
+
+Calculations
+
+    The order form should calculate the total cost correctly using the logic defined above.
+    All amounts should be formatted to two decimal places.
+
+Documentation
+
+    Make sure all of your code is well organized.
+    JavaScript code should be documented with comments throughout the code.
+
+
+Submission Instructions
+
+    Publish your site to GitHub and Netlify.
+    Submit the URL of your GitHub repository.
+    Include your Netlify URL as a comment.
+
