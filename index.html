@@ -66,9 +66,9 @@
 
                     <li class="list-group-item" id="meats"><label>Meat Options: </label>
 
-                    <input type="checkbox" id="pepperoni" name="meat" value="1.50" />&nbsp; Pepperoni
-                    <input type="checkbox" id="sausage" name="meat" value="1.50" />&nbsp; Sausage
-                    <input type="checkbox" id="bacon" name="meat" value="1.50" />&nbsp; Bacon
+                    <input type="checkbox" id="pepperoni" name="meat"  />&nbsp; Pepperoni
+                    <input type="checkbox" id="sausage" name="meat"  />&nbsp; Sausage
+                    <input type="checkbox" id="bacon" name="meat"  />&nbsp; Bacon
                     </li>
 
                    <! ------------------------------------------------------------------------>
@@ -76,12 +76,10 @@
 
                     <li class="list-group-item" id="veggies"><label>Veggie Options: </label>
 
-                        <input type="checkbox" id="tomatoes" name="veg" value="tomatoes">
-                        <label> tomatoes</label>
-                        <input type="checkbox" id="olives" name="veg" value="olives">
-                        <label> olives</label>
-                        <input type="checkbox" id="mushrooms" name="veg" value="mushrooms">
-                        <label> mushrooms</label>
+                        <input type="checkbox" id="tomatoes" name="veg" /> Tomatoes
+                        <input type="checkbox" id="olives" name="veg" /> Olives
+                        <input type="checkbox" id="mushrooms" name="veg" /> Mushrooms
+
 
                     </li>
                     <!-------------------------------------------------------------------------->
@@ -171,11 +169,38 @@
 
             <h2>Review then we Deliver</h2>
             <p>We are ready to review then it is out for delivery</p>
-            <img src="x.jpg" alt="pizza">
+          <!---  <img src="x.jpg" alt="pizza">  -->
 
-            <div id="subTotal">
-                <button>Add it up</button>
+
+            <table style="width: 2%;" border = "1" cellpadding = "2" id="totalTable">
+                <tbody>
+                <tr>
+                    <td> Subtotal:</td>
+                    <td> <div id="subTotal"></div></td>
+                </tr>
+                <tr>
+                    <td> Tax:</td>
+                    <td><div id="taxShow"> </div> </td>
+                </tr>
+                <tr>
+                    <td>  Delivery:</td>
+                    <td><div id="delivery"></div></td>
+                </tr>
+                <tr>
+                    <td> Total: </td>
+                    <td><div id="totalAmount"></div></td>
+                </tr>
+                </tbody>
+            </table>
+
+
+            <button>Total or update your changes</button>
             </div>
+
+
+
+
+
 
 
         </div>
